@@ -1,4 +1,4 @@
-package com.yu.community.community.dto;
+package com.yu.community.dto;
 
 /**
  * @author yu

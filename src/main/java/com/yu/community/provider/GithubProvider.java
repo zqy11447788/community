@@ -1,13 +1,10 @@
-package com.yu.community.community.provider;
+package com.yu.community.provider;
 
 import com.alibaba.fastjson.JSON;
-import com.yu.community.community.dto.AccessTokenDTO;
-import com.yu.community.community.dto.GithubUser;
+import com.yu.community.dto.AccessTokenDTO;
+import com.yu.community.dto.GithubUser;
 import okhttp3.*;
 import org.springframework.stereotype.Component;
-
-import java.io.IOException;
-import java.sql.SQLOutput;
 
 /**
  * @author yu
@@ -29,8 +26,6 @@ public class GithubProvider {
         try (Response response = client.newCall(request).execute()) {
             String string = response.body().string();
             String token = string.split("&")[0].split("=")[1];
-            System.out.println(string);
-            System.out.println(token);
             return token;
         } catch (Exception e) {
             e.printStackTrace();
