@@ -1,14 +1,15 @@
-package com.yu.community.model;
+package com.yu.community.dto;
 
+import com.yu.community.model.User;
 import lombok.Data;
 
 /**
  * @author yu
  * @Description
- * @create 2019-10-16-9:35
+ * @create 2019-10-16-20:06
  */
 @Data
-public class Question {
+public class QuestionDTO {
     private Integer id;
     private String title;
     private String description;
@@ -19,5 +20,5 @@ public class Question {
     private Integer commentCount;
     private Integer likeCount;
     private String tag;
-
+    private User user;
 }
