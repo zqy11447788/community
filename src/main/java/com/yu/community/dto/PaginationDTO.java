@@ -13,8 +13,8 @@ import java.util.concurrent.ForkJoinPool;
  * @create 2019-10-17-10:55
  */
 @Data
-public class PaginationDTO {
-    private List<QuestionDTO> questions;
+public class PaginationDTO<T> {
+    private List<T> data;
     private boolean showPrevious;
     private boolean showFirstPage;
     private boolean showNext;

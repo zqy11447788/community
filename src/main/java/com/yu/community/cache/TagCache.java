@@ -45,7 +45,7 @@ public class TagCache {
 
         TagDTO baby = new TagDTO();
         baby.setCategoryName("喜欢的");
-        baby.setTags(Arrays.asList("鹤鹤"));
+        baby.setTags(Arrays.asList("鹤鹤","喜欢"));
         tagDTOS.add(baby);
         return tagDTOS;
     }
